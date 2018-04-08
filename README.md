@@ -23,6 +23,7 @@ And lastly, this app allows you to order the food items that traditional food de
 You can order tea, juices or even chocolates. For this, we have a separate "Wanna sell on MoodieFoodie" option for small scale sellers like small tea shops, women who make homemade chocolates or other small scale setups who wish to sell online.
 
 ## Working and Implementation
+#Will be added shortly
 
 ## Installation Requirements
 
