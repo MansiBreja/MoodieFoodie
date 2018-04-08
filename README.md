@@ -58,6 +58,8 @@ Copy the url and paste it in your favourite browser window.
 ![screenshot 18](https://user-images.githubusercontent.com/31369977/38465886-bc8cf3e6-3b3e-11e8-9451-583b8854a3a7.png)
 ![screenshot 19](https://user-images.githubusercontent.com/31369977/38465887-bcbca942-3b3e-11e8-9528-77e8cefbff29.png)
 ![screenshot 20](https://user-images.githubusercontent.com/31369977/38465888-bcee7120-3b3e-11e8-87e7-2b8eaa811638.png)
+![screenshot 32](https://user-images.githubusercontent.com/31369977/38466417-516fe1d8-3b46-11e8-82ba-7a1cd22c4622.png)
+![screenshot 39](https://user-images.githubusercontent.com/31369977/38466416-5144b878-3b46-11e8-8da1-b2523d93d95e.png)
 ![screenshot 31](https://user-images.githubusercontent.com/31369977/38465882-bbcf2df2-3b3e-11e8-9192-60f4dbe03276.png)
 
 This project was made collectively by [Mansi Breja](https://github.com/MansiBreja), [Kavita Maurya](https://github.com/Kavita309) and [Anjali Agarwal](https://github.com/aganjali10) as a part of the HackBMU Hackathon, BML University, Gurgaon, Haryana. 
