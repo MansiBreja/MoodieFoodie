@@ -1,0 +1,246 @@
+{% extends "base.html" %}
+{% block headblock %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poor+Story" rel="stylesheet">
+{% endblock %}
+
+{% block fullscreen %}
+
+<div class="index-banner">
+  <div class="index-banner-bg"><img src="https://github.com/JessicaPotter2/foodWebsite/blob/master/images/banner.jpg?raw=true" alt="banner" /></div>
+  <div class="index-banner-text">
+      <h1 align="center" class="head_mansi">MOODIE FOODIE</h1>
+    <div class="text-logo"></div>
+    <p class="text-info">
+      <i class="line line-left"></i>
+
+      <span class="under_tag">The first food recommending and delivery app that gives your mood the prime importance</span><i class="line line-right"></i>
+    </p>
+  </div>
+</div>
+<br>
+<br>
+{% if not user.is_authenticated %}
+
+<a href="{% url 'seller:seller_form' %}" class='sell' >Wanna sell on Moodie Foodie?</a>
+{% endif %}
+
+<style media="screen">
+.sell{
+  text-align: center;
+    display:block;
+  font-size: 30px;
+font-family: 'Poor Story', cursive;
+}
+.under_tag{
+  color:white;
+  font-size: 25px;
+  font-family: 'Poor Story', cursive;
+}
+.head_mansi{
+
+  color:white;
+  font-size: 100px;
+  font-family: 'Poor Story', cursive;
+}
+.index-banner {
+  position: relative;
+  background: #b3b3b3;
+}
+.index-banner-bg {
+  height: 500px;
+  overflow: hidden;
+}
+.index-banner-bg img {
+  margin: 0 auto;
+}
+.index-banner-text {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+   margin-left: -430px;
+}
+.index-banner-text .text-logo {
+  width: 776px;
+  height: 117px;
+
+  no-repeat;
+}
+.index-banner-text .text-info {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+.index-banner-text .text-info .line {
+  display: inline-block;
+  width: 40px;
+  border-top: 1px solid #fff;
+  vertical-align: middle;
+  *margin-top: 22px;
+}
+.index-banner-text .text-info .text {
+  margin: 0 26px;
+}
+
+
+.index-panel {
+  margin: 0 auto;
+  margin-top: 200px;
+  position: relative;
+  width: 1100px;
+}
+.inedx-panel-header {
+}
+.inedx-panel-header h3 {
+  float: left;
+  margin-right: 48px;
+  font-size: 20px;
+  color: #3b3b3b;
+  font-weight: normal;
+}
+.inedx-panel-header .line {
+  float: left;
+  margin-top: 10px;
+  width: 200px;
+  border-top: 1px solid #e5e3e3;
+}
+.inedx-panel-header .btn-group {
+  font-size: 0;
+  float: right;
+}
+.inedx-panel-header .btn {
+  display: inline-block;
+  margin-left: 11px;
+  width: 9px;
+  height: 9px;
+  background: #dedede;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+.inedx-panel-header .active {
+  background: #9b9b9b;
+}
+.index-panel-body {
+  margin-top: 75px;
+}
+.index-food-list {
+  overflow: hidden;
+}
+.index-food-list ul {
+  width: 1160px;
+}
+.index-food-list .food-item {
+  float: left;
+  width: 230px;
+  margin-right: 60px;
+}
+.index-food-list .food-item .banner {
+  margin-bottom: 30px;
+  height: 202px;
+}
+.index-food-list .food-item .name {
+  color: #555;
+  margin-bottom: 10px;
+}
+.index-food-list .food-item .star-bar {
+  font-size: 0;
+}
+.index-food-list .food-item .star {
+  display: inline-block;
+  width: 12px;
+  height: 13px;
+  margin-right: 5px;
+  background-image: url("https://github.com/JessicaPotter2/foodWebsite/blob/master/images/star.png?raw=true");
+  background-repeat: no-repeat;
+}
+.index-food-list .food-item .no-star {
+  background-position: 0 -13px;
+}
+.index-food-list .food-item .price {
+  float: right;
+}
+.index-pics {
+  height: 380px;
+  overflow: hidden;
+}
+.index-pics .pic-col {
+  float: left;
+}
+.index-pics .pic-col-l {
+  width: 460px;
+}
+.index-pics .pic-col-m {
+  width: 352px;
+}
+.index-pics .pic-col-s {
+  width: 288px;
+}
+.public-header {
+  height: 110px;
+}
+.public-header .header-logo {
+  margin-top: 40px;
+  float: left;
+}
+.public-header .header-logo a {
+  width: 182px;
+  height: 54px;
+  background: url("https://github.com/JessicaPotter2/foodWebsite/blob/master/images/index-header-logo.png?raw=true")
+    no-repeat;
+}
+.public-header .header-nav a:hover {
+  text-decoration: underline;
+}
+.public-header .header-nav {
+  float: right;
+  font-size: 14px;
+}
+.public-header .header-nav .item {
+  float: left;
+  margin-top: 44px;
+  margin-left: 44px;
+}
+.public-header .header-nav a {
+  color: #3b3b3b;
+}
+.public-container {
+  position: relative;
+  margin: 0 auto;
+  width: 1100px;
+}
+.public-footer {
+  height: 218px;
+  padding-top: 100px;
+  margin-top: 200px;
+  background: #3b3b3b;
+}
+.public-footer .footer-col {
+  width: 230px;
+  float: left;
+  margin-right: 60px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.8;
+}
+.public-footer .footer-col-nor {
+  margin-right: 0;
+}
+.public-footer .footer-logo {
+  width: 182px;
+  height: 55px;
+  margin-top: -15px;
+  margin-bottom: 12px;
+  background: url("https://github.com/JessicaPotter2/foodWebsite/blob/master/images/index-footer-logo.png?raw=true")
+    no-repeat;
+}
+.footer-info a {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+</style>
+
+{% endblock %}
