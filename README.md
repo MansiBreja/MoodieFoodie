@@ -1,7 +1,7 @@
 # MoodieFoodie
 *...Food for every Mood*
 
-This is a web application which recommends you food based on your mood and delivers it to your doorstep.
+This is a web application which recommends you food based on your mood using machine learning and delivers it to your doorstep.
 
 We understand that the first thought that comes to our mind when we come across a food suggesting and delivery app, is obviously- "HOW IS THIS SOMETHING NEW?"
 
