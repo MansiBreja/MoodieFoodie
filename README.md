@@ -38,7 +38,7 @@ A very simple model of machine learning, that is logistic regression is used to 
 ## Installation Requirements
 
 ```
-Framework : Django, Version : 1.11.8
+Framework : Django, Version : 1.11.17
 Language : Python, Version : 3.6.3
 
 To run it, you need to install some packages and libraries as follows:
@@ -48,8 +48,9 @@ sklearn
 bcrypt
 django[argon]
 
+Install dependencies directly from requirements.txt in pip installation,
 To install these, write this on the command line terminal:
-"pip install package-name"
+"pip install -r requirements.txt"
 ```
 
 ## To run
@@ -57,6 +58,7 @@ To install these, write this on the command line terminal:
 ```
 Clone this repo
 cd into this repo
+Enter command: "pip install -r requirements.txt"
 Enter the command: "python manage.py runserver"
 Copy the url and paste it in your favourite browser window.
 ```
